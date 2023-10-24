@@ -1,7 +1,10 @@
-/* Ionic Variables and Theming. For more info, please see:
-http://ionicframework.com/docs/theming/ */
-
 /** Ionic CSS Variables **/
+
+/* src/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -76,7 +79,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-tint: #f5f6f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -153,10 +156,10 @@ http://ionicframework.com/docs/theming/ */
    */
 
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: white;
     --ion-background-color-rgb: 0,0,0;
 
-    --ion-text-color: #ffffff;
+    --ion-text-color: black;
     --ion-text-color-rgb: 255,255,255;
 
     --ion-color-step-50: #0d0d0d;
@@ -197,10 +200,10 @@ http://ionicframework.com/docs/theming/ */
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: white;
     --ion-background-color-rgb: 18,18,18;
 
-    --ion-text-color: #ffffff;
+    --ion-text-color: black;
     --ion-text-color-rgb: 255,255,255;
 
     --ion-border-color: #222222;
@@ -239,4 +242,14 @@ html {
   /* For more information on dynamic font scaling, visit the documentation: 
   https://ionicframework.com/docs/layout/dynamic-font-scaling */
   --ion-dynamic-font: var(--ion-default-dynamic-font);
+}
+
+.more-tab {
+  margin-top: 30%;
+  width: 30%;
+}
+
+.ion-tab-button {
+  display: flex !important;
+  align-items: center !important;
 }
