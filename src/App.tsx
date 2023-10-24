@@ -27,6 +27,7 @@ import card from '../src/assets/card.png'
 import transfer from '../src/assets/transfer.png'
 import chart from '../src/assets/chart.png'
 import more from '../src/assets/more.png'
+import Transfer from './pages/Transfer';
 
 setupIonicReact();
 
@@ -40,6 +41,10 @@ const App: React.FC = () => {
       <IonRouterOutlet>
         <Route exact path="/">
           <AccountOverview />
+        </Route>
+
+        <Route exact path="/transfer">
+          <Transfer />
         </Route>
       </IonRouterOutlet>
         <IonTabBar slot="bottom">
